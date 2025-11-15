@@ -8,9 +8,9 @@
         Title="Авторизация" Height="833" Width="736"
         Background="#0D1B2A">
     <Grid>
+        
         <Canvas>
             <TextBlock Text="Авторизация"
-                   FontFamily="/Konstr;component/Fonts/#ABeeZee"
                    FontWeight="Normal" 
                    FontStyle="Normal"     
                    FontSize="64"          
@@ -20,7 +20,7 @@
                    Width="412"            
                    Height="81"          
                    TextAlignment="Center" 
-                   VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.502,0.547" Canvas.Top="41" />
+                   VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.502,0.547" Canvas.Top="41" FontFamily="Cambria" />
 
             <TextBlock Text="Логин"
                 FontWeight="Normal"
@@ -32,9 +32,10 @@
                 Width="61"
                 Height="32"
                 TextAlignment="Center"
-                VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.443,0.392" />
+                VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.443,0.392" FontFamily="Cambria" />
 
 
         </Canvas>
     </Grid>
 </Window>
+    
