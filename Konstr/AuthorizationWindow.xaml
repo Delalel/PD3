@@ -1,0 +1,40 @@
+﻿<Window x:Class="Konstr.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Konstr"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="833" Width="736"
+        Background="#0D1B2A">
+    <Grid>
+        <Canvas>
+            <TextBlock Text="Авторизация"
+                   FontFamily="/Konstr;component/Fonts/#ABeeZee"
+                   FontWeight="Normal" 
+                   FontStyle="Normal"     
+                   FontSize="64"          
+                   LineHeight="128"       
+                   Foreground="#E0E1DD"   
+                   Canvas.Left="162"      
+                   Width="412"            
+                   Height="81"          
+                   TextAlignment="Center" 
+                   VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.502,0.547" Canvas.Top="41" />
+
+            <TextBlock Text="Логин"
+                FontWeight="Normal"
+                FontStyle="Normal"
+                FontSize="20"
+                Foreground="#E0E1DD"
+                Canvas.Left="179"
+                Canvas.Top="208"
+                Width="61"
+                Height="32"
+                TextAlignment="Center"
+                VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.443,0.392" />
+
+
+        </Canvas>
+    </Grid>
+</Window>
