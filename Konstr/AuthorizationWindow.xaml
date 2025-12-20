@@ -6,11 +6,6 @@
         xmlns:local="clr-namespace:Konstr"
         mc:Ignorable="d"
         Title="Авторизация" Height="833" Width="736"
-        Background="#0D1B2A">
-    <Grid>
-        
-        <Canvas>
-            <TextBlock Text="Авторизация"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         AllowsTransparency="True"
