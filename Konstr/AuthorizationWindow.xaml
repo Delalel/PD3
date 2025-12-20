@@ -11,31 +11,149 @@
         
         <Canvas>
             <TextBlock Text="Авторизация"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent">
+    <Border Background="#0D1B2A" CornerRadius="12">
+        <Grid>
+
+            <Grid x:Name="TitleBar" Height="30" VerticalAlignment="Top" Background="#0D1B2A" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="621,0,0,0" Width="105">
+                    <Button Content="—" Width="60" Height="20" Background="Transparent" Foreground="#E0E1DD" FontSize="16" Cursor="Hand" Click="MinimizeButton_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="2">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Foreground" Value="#121820"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#E0E0E0"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+
+
+
+                    <Button Content="✕" Width="30" Height="20" Background="Transparent" Foreground="#E0E1DD" FontSize="16" Cursor="Hand" Click="CloseButton_Click" Margin="5,0">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="2">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Foreground" Value="#121820"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#FF5F5F"/>
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </StackPanel>
+            </Grid>
+
+            <Canvas>
+
+                <TextBlock Text="Авторизация"
                    FontWeight="Normal" 
                    FontStyle="Normal"     
                    FontSize="64"          
                    LineHeight="128"       
                    Foreground="#E0E1DD"   
-                   Canvas.Left="162"      
-                   Width="412"            
+                   Canvas.Left="177"      
+                   Width="382"            
                    Height="81"          
                    TextAlignment="Center" 
-                   VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.502,0.547" Canvas.Top="41" FontFamily="Cambria" />
-
-            <TextBlock Text="Логин"
-                FontWeight="Normal"
-                FontStyle="Normal"
-                FontSize="20"
-                Foreground="#E0E1DD"
-                Canvas.Left="179"
-                Canvas.Top="208"
-                Width="61"
-                Height="32"
-                TextAlignment="Center"
-                VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.443,0.392" FontFamily="Cambria" />
+                   VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.497,0.582" Canvas.Top="43" FontFamily="Cambria" />
 
 
-        </Canvas>
-    </Grid>
+
+
+                <StackPanel Height="116" Canvas.Top="243" Width="365" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="179">
+                    <TextBlock Text="Логин" Foreground="#E0E1DD" FontSize="25" FontWeight="Medium" FontFamily="Cambria" Margin="0,0,0,8"/>
+                    <Border CornerRadius="8" BorderBrush="White" BorderThickness="1" Background="Transparent">
+                        <TextBox 
+                        Height="57"
+                        Background="Transparent"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Padding="10,0"
+                        FontSize="16"
+                        CaretBrush="White"
+                        VerticalContentAlignment="Center"/>
+                    </Border>
+                </StackPanel>
+
+                <StackPanel Height="115" Canvas.Top="431" Width="365" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="179">
+                    <TextBlock Text="Пароль" Foreground="#E0E1DD" FontSize="25" FontWeight="Medium" FontFamily="Cambria" Margin="0,0,0,8"/>
+                    <Border CornerRadius="8" BorderBrush="White" BorderThickness="1" Background="Transparent">
+                        <TextBox 
+                        Height="57"
+                        Background="Transparent"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Padding="10,0"
+                        FontSize="16"
+                        CaretBrush="White"
+                        VerticalContentAlignment="Center"/>
+                    </Border>
+                </StackPanel>
+
+                <Button 
+                Content="Войти"
+                Height="74"
+                Width="231"
+                Background="#E0E1DD"
+                Foreground="#121820"
+                BorderBrush="Transparent"
+                BorderThickness="0"
+                FontSize="30"
+                FontWeight="SemiBold"
+                FontFamily="Cambria"
+                Cursor="Hand" Canvas.Left="246" Canvas.Top="650" HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}"
+                                            BorderBrush="{TemplateBinding BorderBrush}"
+                                            BorderThickness="{TemplateBinding BorderThickness}"
+                                            CornerRadius="25">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#D0D0D0"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Background" Value="#C0C0C0"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+            </Canvas>
+
+        </Grid>
+    </Border>
 </Window>
     
