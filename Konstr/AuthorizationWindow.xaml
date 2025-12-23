@@ -120,7 +120,7 @@
                 FontSize="30"
                 FontWeight="SemiBold"
                 FontFamily="Cambria"
-                Cursor="Hand" Canvas.Left="246" Canvas.Top="650" HorizontalAlignment="Center" VerticalAlignment="Top">
+                Cursor="Hand" Canvas.Left="246" Canvas.Top="650" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Template">

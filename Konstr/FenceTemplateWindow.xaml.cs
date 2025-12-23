@@ -14,12 +14,16 @@ using System.Windows.Shapes;
 
 namespace Konstr
 {
-    public partial class AuthorizationWindow : Window
+    /// <summary>
+    /// Логика взаимодействия для FenceTemplateWindow.xaml
+    /// </summary>
+    public partial class FenceTemplateWindow : Window
     {
-        public AuthorizationWindow()
+        public FenceTemplateWindow()
         {
             InitializeComponent();
         }
+
         private void TitleBar_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             if (e.ChangedButton == System.Windows.Input.MouseButton.Left)
@@ -36,16 +40,5 @@ namespace Konstr
             WindowState = WindowState.Minimized;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var warehouseWindow = new WarehouseWindow();
-            var executorWindow = new ExecutorWindow();
-            var managerWindow = new ManagerDesignerWindow();
-
-            warehouseWindow.Show();
-            executorWindow.Show();
-            managerWindow.Show();
-
-        }
     }
 }
