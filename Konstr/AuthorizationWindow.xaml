@@ -11,7 +11,7 @@
         AllowsTransparency="True"
         Background="Transparent">
     
-    <Border Background="#0D1B2A" CornerRadius="12">
+    <Border Background="#FF6282A5" CornerRadius="12">
         <Grid>
 
             <Grid x:Name="TitleBar" Height="30" VerticalAlignment="Top" Background="#0D1B2A" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
